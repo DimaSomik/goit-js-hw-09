@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./02-form.js" defer></script>
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-curr="active"
+    />
+
+    <main>
+      <div class="container">
+        <h1 class="main-title">
+          <span class="main-title-gradient">Welcome</span> to our feedback
+        </h1>
+
+        <form class="feedback-form" autocomplete="off">
+          <div class="form-container">
+
+            <div class="form-box">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-email" autofocus/>
+            </div>
+
+            <div class="form-box">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" id="message" rows="8" class="form-area"></textarea>
+            </div>
+          
+            <button type="submit" class="form-btn">Submit</button>
+          </div>
+        </form>
+        
+
+        <load src="./partials/back-link.html" />
+      </div>
+    </main>
+
+    <load src="./partials/footer.html" />
+  </body>
+</html>
