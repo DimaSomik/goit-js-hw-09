@@ -1,11 +1,11 @@
 const form = document.querySelector(".feedback-form");
-const emailInput = document.querySelector(".form-email")
-const textArea = document.querySelector(".form-area")
+const emailInput = document.querySelector(".form-email");
+const textArea = document.querySelector(".form-area");
 const localStorageKey = "feedback-form-state";
 const STORAGE = {
     email: "",
     message: "",
-}
+};
 
 const getLocalStorage = JSON.parse(localStorage.getItem(localStorageKey)) ?? "";
 
